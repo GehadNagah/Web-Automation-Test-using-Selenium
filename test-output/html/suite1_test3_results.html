@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>EdgeTest</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>testcase.MyFirstTest</th> 
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>Suite</th> 
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>C:\Users\HP\eclipse-workspace\automation\testng.xml</th> 
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th>00:01:40</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	    <th>1</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th><font color="red">FAIL</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+												
+											<tr>
+	<td class="time">1710885945342</td>
+	<td class="header failed" colspan="4">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testcase.MyFirstTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["TestData"] &nbsp;&nbsp;<span id='span-e101d5a9-1395-4955-8fda-250dadb5a6c2' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1710885945342</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>7.362s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">" vodafone logo"</span><br>
+				<div class="noCollapse" id="e101d5a9-1395-4955-8fda-250dadb5a6c2" style="display: block;">
+												 <a href='C:\Users\HP\eclipse-workspace\automation//screenshots//Wed-Mar-20-00-05-52-EET-2024.png'> <img src='C:\Users\HP\eclipse-workspace\automation//screenshots//Wed-Mar-20-00-05-52-EET-2024.png' height='200' width='200'/> </a>  
+									<a href="javascript:toggleElement('exception-e101d5a9-1395-4955-8fda-250dadb5a6c2','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [10] but found [9]</b></a><br/>
+		<div class="stackTrace" id="exception-e101d5a9-1395-4955-8fda-250dadb5a6c2">
+					org.testng.Assert.fail(Assert.java:99)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1037)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:140)<br/>
+					org.testng.Assert.assertEquals(Assert.java:122)<br/>
+					org.testng.Assert.assertEquals(Assert.java:907)<br/>
+					org.testng.Assert.assertEquals(Assert.java:917)<br/>
+					testcase.MyFirstTest.Test(MyFirstTest.java:68)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br/>
+					java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:568)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+					org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br/>
+					org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br/>
+					org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br/>
+					org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br/>
+					org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br/>
+					org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br/>
+					org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:794)<br/>
+					org.testng.TestRunner.run(TestRunner.java:596)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+					org.testng.TestNG.run(TestNG.java:1031)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+				
+												<tr>
+			<td class="time">1710885885225</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('23cacb57-6a1a-4dbe-a277-261f012063b2','block');changeSingleIcon('span-23cacb57-6a1a-4dbe-a277-261f012063b2');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testcase.MyFirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : ["TestData"] &nbsp;&nbsp;<span id='span-23cacb57-6a1a-4dbe-a277-261f012063b2' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1710885885225</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>8.181s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Vudafoone"</span><br>
+				<div class="stackTrace" id="23cacb57-6a1a-4dbe-a277-261f012063b2" style="display: block;">
+												Test Successed
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1710885902191</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('df39b00b-3f1b-4f67-a21f-0b867fe189d8','block');changeSingleIcon('span-df39b00b-3f1b-4f67-a21f-0b867fe189d8');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testcase.MyFirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : ["TestData"] &nbsp;&nbsp;<span id='span-df39b00b-3f1b-4f67-a21f-0b867fe189d8' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1710885902191</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>10.007s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Vodafone Stores"</span><br>
+				<div class="stackTrace" id="df39b00b-3f1b-4f67-a21f-0b867fe189d8" style="display: block;">
+												Test Successed
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1710885863962</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('baebbe03-a1ab-429d-b417-649cd17708f7','block');changeSingleIcon('span-baebbe03-a1ab-429d-b417-649cd17708f7');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testcase.MyFirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : ["TestData"] &nbsp;&nbsp;<span id='span-baebbe03-a1ab-429d-b417-649cd17708f7' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1710885863962</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>12.472s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Vodafone"</span><br>
+				<div class="stackTrace" id="baebbe03-a1ab-429d-b417-649cd17708f7" style="display: block;">
+												Test Successed
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1710885926708</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('6102559a-f21f-47c7-a22a-b680527c662d','block');changeSingleIcon('span-6102559a-f21f-47c7-a22a-b680527c662d');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testcase.MyFirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : ["TestData"] &nbsp;&nbsp;<span id='span-6102559a-f21f-47c7-a22a-b680527c662d' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1710885926708</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>9.173s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Vodafone Images"</span><br>
+				<div class="stackTrace" id="6102559a-f21f-47c7-a22a-b680527c662d" style="display: block;">
+												Test Successed
+								</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>

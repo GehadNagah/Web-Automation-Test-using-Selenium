@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>    <!--Listener class is implemented in base package to do specific actions when pass / fail-->
+		<listener class-name="base.Listeners"></listener>
+		<listener class-name= "org.uncommons.reportng.HTMLReporter"></listener>
+
+	</listeners>
+	
+  <test name="ChromeTest">
+	<parameter name="browser" value="chrome"></parameter>
+		<parameter name="website" value="https://www.bing.com"></parameter>
+    <classes>
+      <class name="testcase.MyFirstTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="FirefoxTest">
+	<parameter name="browser" value="firefox"></parameter>
+	<parameter name="website" value="https://www.bing.com"></parameter>
+
+    <classes>
+      <class name="testcase.MyFirstTest"/>
+    </classes>
+  </test> <!-- Test -->  
+
+  <test name="EdgeTest">
+	<parameter name="browser" value="edge"></parameter>
+			<parameter name="website" value="https://www.bing.com"></parameter>
+
+    <classes>
+      <class name="testcase.MyFirstTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
